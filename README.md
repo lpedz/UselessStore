@@ -47,9 +47,14 @@ For Software:
   git clone https://github.com/lpedz/UselessStore
   cd UselessStore
   flutter run 
+
+
+  or just download tthe store.apk from repo
   
 # Run
 flutter run ./lib/main.dart
+
+or lauch the store apk
 
 ### Project Documentation
 For Software:
