@@ -19,33 +19,43 @@ class AppStoreApp extends StatelessWidget {
 
 class AppStoreHome extends StatelessWidget {
   final List<Map<String, String>> apps = [
-    {"name": "Flash", "icon": "assets/flsh.jpg", "apk": "assets/flash.apk"},
+    {
+      "name": "Flash",
+      "icon": "assets/flsh.jpg",
+      "apk": "https://files.catbox.moe/4y3gce.apk"
+    },
     {
       "name": "App Counter",
       "icon": "assets/count.jpg",
-      "apk": "assets/app2.apk"
+      "apk": "https://files.catbox.moe/tb487f.apk"
     },
-    {"name": "Games", "icon": "assets/loading.jpg", "apk": "assets/app3.apk"},
-    {"name": "Orange", "icon": "assets/orange.jpg", "apk": "assets/app4.apk"},
+    {
+      "name": "Games",
+      "icon": "assets/loading.jpg",
+      "apk": "https://files.catbox.moe/78ib4o.apk"
+    },
+    {
+      "name": "Orange",
+      "icon": "assets/orange.jpg",
+      "apk": "https://files.catbox.moe/4yne3v.apk"
+    },
     {
       "name": "Wifi Scanner",
       "icon": "assets/wifi.jpg",
-      "apk": "assets/app5.apk"
+      "apk": "https://files.catbox.moe/j195f7.apk"
     },
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white, // Change background color to white
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text('App Store'),
         actions: [
           IconButton(
             icon: Icon(Icons.search),
-            onPressed: () {
-              // Implement search functionality here
-            },
+            onPressed: () {},
           ),
         ],
       ),
@@ -60,25 +70,16 @@ class AppStoreHome extends StatelessWidget {
         itemBuilder: (context, index) {
           return GestureDetector(
             onTap: () {
-              // Show install dialog
               showDialog(
                 context: context,
                 builder: (BuildContext context) {
                   return AlertDialog(
-                    title: Text("Install ${apps[index]["name"]!}"),
-                    content: Text("Do you want to install ${apps[index]["name"]}?"),
+                    content: Text(
+                        "Go to the link below to download:\n\n${apps[index]["apk"]}"),
                     actions: [
                       TextButton(
-                        child: Text("Cancel"),
+                        child: Text("OK"),
                         onPressed: () {
-                          Navigator.of(context).pop();
-                        },
-                      ),
-                      TextButton(
-                        child: Text("Install"),
-                        onPressed: () {
-                          // Handle installation logic
-                          installApk(apps[index]["apk"]!);
                           Navigator.of(context).pop();
                         },
                       ),
@@ -89,7 +90,10 @@ class AppStoreHome extends StatelessWidget {
             },
             child: Card(
               color: Colors.grey[850],
-              elevation: 4,
+              elevation: 6,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(15),
+              ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -106,7 +110,21 @@ class AppStoreHome extends StatelessWidget {
                     apps[index]["name"]!,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
+                      fontSize: 16,
                       color: Colors.white,
+                    ),
+                  ),
+                  SizedBox(height: 5),
+                  GestureDetector(
+                    onTap: () {
+                      print("APK Path: ${apps[index]["apk"]}");
+                    },
+                    child: Text(
+                      '',
+                      style: TextStyle(
+                        color: Colors.blue,
+                        decoration: TextDecoration.underline,
+                      ),
                     ),
                   ),
                 ],
@@ -134,17 +152,8 @@ class AppStoreHome extends StatelessWidget {
         selectedItemColor: Colors.blue,
         unselectedItemColor: Colors.black,
         backgroundColor: Colors.grey[900],
-        onTap: (index) {
-          // Handle bottom navigation taps
-        },
+        onTap: (index) {},
       ),
     );
-  }
-
-  void installApk(String apkPath) {
-    // This is where you would handle the APK installation
-    // Since direct installation is not supported in Flutter,
-    // you might need to use a plugin like open_file or platform channels.
-    print("Installing APK from $apkPath"); // Placeholder for installation logic
   }
 }
