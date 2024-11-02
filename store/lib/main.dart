@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() {
   runApp(AppStoreApp());
@@ -46,6 +47,15 @@ class AppStoreHome extends StatelessWidget {
     },
   ];
 
+  Future<void> _launchURL(String urlString) async {
+    final Uri url = Uri.parse(urlString);
+    if (await canLaunchUrl(url)) {
+      await launchUrl(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -78,7 +88,14 @@ class AppStoreHome extends StatelessWidget {
                         "Go to the link below to download:\n\n${apps[index]["apk"]}"),
                     actions: [
                       TextButton(
-                        child: Text("OK"),
+                        child: Text("Download"),
+                        onPressed: () {
+                          _launchURL(apps[index]["apk"]!);
+                          Navigator.of(context).pop();
+                        },
+                      ),
+                      TextButton(
+                        child: Text("Cancel"),
                         onPressed: () {
                           Navigator.of(context).pop();
                         },
