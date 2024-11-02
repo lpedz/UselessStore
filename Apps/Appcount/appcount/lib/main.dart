@@ -9,7 +9,7 @@ void main() {
 }
 
 class AppCheckExample extends StatefulWidget {
-  const AppCheckExample({Key? key}) : super(key: key);
+  const AppCheckExample({super.key});
 
   @override
   State<AppCheckExample> createState() => _AppCheckExampleState();

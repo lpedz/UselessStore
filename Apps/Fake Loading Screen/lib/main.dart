@@ -6,6 +6,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,6 +21,8 @@ class MyApp extends StatelessWidget {
 }
 
 class FakeLoadingScreen extends StatefulWidget {
+  const FakeLoadingScreen({super.key});
+
   @override
   _FakeLoadingScreenState createState() => _FakeLoadingScreenState();
 }
@@ -27,7 +31,7 @@ class _FakeLoadingScreenState extends State<FakeLoadingScreen> {
   int _elapsedSeconds = 0;   // Variable to track elapsed seconds
   late Timer _loadingTimer;   // Timer for loading messages
   late Timer _elapsedTimer;    // Timer for elapsed seconds
-  List<String> _messages = [
+  final List<String> _messages = [
     "Loading your thoughts...",
     "Just a moment...",
     "Please wait while we gather the data...",
@@ -61,7 +65,7 @@ class _FakeLoadingScreenState extends State<FakeLoadingScreen> {
   }
 
   void _startLoading() {
-    _loadingTimer = Timer.periodic(Duration(seconds: 3), (timer) {
+    _loadingTimer = Timer.periodic(const Duration(seconds: 3), (timer) {
       setState(() {
         _currentMessage = _messages[(timer.tick - 1) % _messages.length];
       });
@@ -69,7 +73,7 @@ class _FakeLoadingScreenState extends State<FakeLoadingScreen> {
   }
 
   void _startElapsedTimer() {
-    _elapsedTimer = Timer.periodic(Duration(seconds: 1), (timer) {
+    _elapsedTimer = Timer.periodic(const Duration(seconds: 1), (timer) {
       setState(() {
         _elapsedSeconds++;
       });
@@ -91,17 +95,17 @@ class _FakeLoadingScreenState extends State<FakeLoadingScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            CircularProgressIndicator(),
-            SizedBox(height: 20),
+            const CircularProgressIndicator(),
+            const SizedBox(height: 20),
             Text(
               _currentMessage,
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Text(
               "Waiting for $_elapsedSeconds seconds...",
-              style: TextStyle(fontSize: 18),
+              style: const TextStyle(fontSize: 18),
             ),
           ],
         ),
