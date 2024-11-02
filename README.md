@@ -38,9 +38,5 @@ The **Useless Store** is an entertaining collection of several whimsical apps, e
 
 ## Installation
 
-To install and run the Useless Store on your device, follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/useless-store.git
+   To Install Useless Store download Store.apk . 
 
