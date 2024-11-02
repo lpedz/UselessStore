@@ -76,6 +76,10 @@ For Software:
 # Video
 [Add your demo video link here]
 *Explain what the video demonstrates*
+Download a useless app(Wifi Scanner) from the Useless Store and install to use it in your mobile phone
+
+https://github.com/user-attachments/assets/cbf5bb66-a497-4a8d-a29b-e45d548773a2
+
 
 # Additional Demos
 [Add any extra demo materials/links]
