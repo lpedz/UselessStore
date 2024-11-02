@@ -16,6 +16,7 @@
 Welcome to the **Useless Store**, a whimsical corner of the digital universe where laughter meets absurdity! This delightful project features five uniquely pointless apps, each crafted to tickle your funny bone and provide a delightful escape from the mundane. In a world driven by productivity, these apps serve as a playful reminder that sometimes, it's perfectly okay to embrace the ridiculous.
 
 
+
 ### The Problem (that doesn't exist)
 
 Chronic Fear of Unused Paperclips: Imagine a world where individuals are irrationally terrified of having unused paperclips cluttering their desks. They spend hours reorganizing their supplies to avoid the "ominous presence" of paperclips that haven’t been utilized, believing it brings bad luck. The thought of a single paperclip lying dormant can lead to frantic searches for papers to clip, resulting in unnecessary chaos and a perpetual state of unease.
@@ -33,53 +34,36 @@ For Software:
 - Url launcher,path provide etc
 - Vscode , AVD
 
-For Hardware:
-- A arm64 bit cpu
-- basic android phone with internet
-
-### Implementation
-For Software:
 # Installation
 [commands]
-
+  git clone https://github.com/lpedz/UselessStore
+  cd UselessStore
+  flutter run 
+  
 # Run
-[commands]
+flutter run ./lib/main.dart
 
 ### Project Documentation
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![image](https://github.com/user-attachments/assets/e2df5dc5-f2a6-497f-9525-fce286cba6f8)
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+*The main page of the store offering downloads of other apps*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![image](https://github.com/user-attachments/assets/851bf736-c5fc-493b-88c4-98dfcef241b5)
+
+*The Games app which displays an endless loading screen with unique quotes*
+
+![image](https://github.com/user-attachments/assets/5bf22508-6730-485d-8ad1-0fe4bb58c28e)
+
+*The wifi sccanner app showing nearby wifi signals*
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
 *Add caption explaining your workflow*
 
-For Hardware:
 
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
 
 ### Project Demo
 # Video
@@ -90,9 +74,9 @@ For Hardware:
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Amal Benny P: Store,AppCounter
+- Alan R A: Games app,Flashlight
+- Meenakshi S: Orange app,Wifi Scanner
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
