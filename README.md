@@ -59,7 +59,7 @@ or lauch the store apk
 ### Project Documentation
 For Software:
 
-# Screenshots (Add at least 3)
+# Screenshots 
 ![image](https://github.com/user-attachments/assets/e2df5dc5-f2a6-497f-9525-fce286cba6f8)
 
 *The main page of the store offering downloads of other apps*
@@ -74,9 +74,9 @@ For Software:
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
-Download a useless app(Wifi Scanner) from the Useless Store and install to use it in your mobile phone
+
+*Download a useless app(Wifi Scanner) from the Useless Store and install to use it in your mobile phone*
+
 
 https://github.com/user-attachments/assets/cbf5bb66-a497-4a8d-a29b-e45d548773a2
 
