@@ -17,10 +17,10 @@ Welcome to the **Useless Store**, a whimsical corner of the digital universe whe
 
 
 
-### The Problem (that doesn't exist)
+### The Problem
 We are addressing this non-existent issue with a suite of five absurdly entertaining apps designed to inject a dose of humor and light-heartedness into your day. Each app serves no real purpose other than to make you smile , and make your routine tasks harder.
 
-### The Solution (that nobody asked for)
+### The Solution
 We created a suite of five hilariously pointless apps to address this  problem. Each app is designed to bring joy and laughter, turning the mundane into the absurdly entertaining. Here are the apps:
 
 1.AppCounter: This revolutionary app does one thing and one thing only: it counts the number of apps you have installed. It won’t do anything about them, won't tell you which ones they are, just proudly announces the total number of your digital clutter. Perfect for impressing your friends with the sheer volume of your app addiction!
@@ -81,8 +81,6 @@ For Software:
 https://github.com/user-attachments/assets/cbf5bb66-a497-4a8d-a29b-e45d548773a2
 
 
-# Additional Demos
-[Add any extra demo materials/links]
 
 ## Team Contributions
 - Amal Benny P: Store,AppCounter
