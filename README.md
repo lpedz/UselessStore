@@ -1,7 +1,7 @@
 <img width="1280" alt="readme-banner" src="https://github.com/user-attachments/assets/35332e92-44cb-425b-9dff-27bcf1023c6c">
 
 # Useless Store 🎯
-
+Pre-Built APK -https://files.catbox.moe/wli5fs.apk
 
 ## Basic Details
 ### Team Name: Minions
@@ -24,15 +24,20 @@ We are addressing this non-existent issue with a suite of five absurdly entertai
 We created a suite of five hilariously pointless apps to address this  problem. Each app is designed to bring joy and laughter, turning the mundane into the absurdly entertaining. Here are the apps:
 
 1.AppCounter: This revolutionary app does one thing and one thing only: it counts the number of apps you have installed. It won’t do anything about them, won't tell you which ones they are, just proudly announces the total number of your digital clutter. Perfect for impressing your friends with the sheer volume of your app addiction!
+Download link:https://files.catbox.moe/tb487f.apk
 
 2.Games App: An absolute masterpiece of modern gaming! This app features an endless loading screen adorned with quirky quotes like "Just a bit longer," "Almost there," and "Patience is a virtue." It's the zenith of suspense and excitement. Who needs actual games when you can marvel at the beauty of eternal anticipation?
+Download link:https://files.catbox.moe/78ib4o.apk
 
 3.Flashlight App: Need a flashlight? Forget the convenient quick tile on your device. This app brings back the nostalgia of the past by requiring you to navigate through multiple menus just to turn on a light. It's like a digital scavenger hunt every time you need to see in the dark. Who said convenience is key?
+Download link:https://files.catbox.moe/4y3gce.apk
 
 4.Orange App: This app boasts a stunning, completely orange screen. No buttons, no menus, just orange. It's the ultimate minimalist app for those who appreciate the simple things in life. Need to relax? Stare at the orange screen. Need a laugh? Realize you downloaded an app that just shows orange. It’s the zenith of app absurdity!
+Download link:https://files.catbox.moe/4yne3v.apk
+
 
 5.Wifi Scanner: Experience the thrill of the hunt with our WiFi Scanner! It scans for nearby WiFi signals but refuses to connect to any of them. Watch in awe as it lists networks you can’t use, tantalizing you with possibilities. It's like window shopping for WiFi - look but don’t touch!
-
+Download link:https://files.catbox.moe/j195f7.apk
 
 ## Technical Details
 ### Technologies/Components Used
@@ -43,6 +48,11 @@ For Software:
 - Vscode , AVD
 
 # Installation
+
+download prebuilt apk from
+https://files.catbox.moe/wli5fs.apk
+
+
 [commands]
   git clone https://github.com/lpedz/UselessStore
   cd UselessStore
@@ -54,7 +64,8 @@ For Software:
 # Run
 flutter run ./lib/main.dart
 
-or lauch the store apk
+or lauch the store app
+
 
 ### Project Documentation
 For Software:
